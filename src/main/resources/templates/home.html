@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Búsqueda de Alumno</title>
+</head>
+<body>
+<h1>Búsqueda de Alumno</h1>
+<form th:action="@{/busqueda/encontrar}" method="post">
+    <label for="codigo">Código de Estudiante:</label>
+    <input type="text" id="codigo" name="codigo" required>
+    <button type="submit">Buscar</button>
+</form>
+
+
+
+</body>
+</html>

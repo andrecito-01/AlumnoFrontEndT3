@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Detalle del Alumno</title>
+</head>
+<body>
+<h1>Detalle del Alumno</h1>
+
+<form>
+    <label for="codigo">Código:</label>
+    <input type="text" id="codigo" name="codigo" th:value="${alumnoModel.codigo}" readonly>
+
+    <label for="nombres">Nombres:</label>
+    <input type="text" id="nombres" name="nombres" th:value="${alumnoModel.Nombre}" readonly>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" th:value="${alumnoModel.Apellido}" readonly>
+
+    <label for="carrera">Carrera:</label>
+    <input type="text" id="carrera" name="carrera" th:value="${alumnoModel.Carrera}" readonly>
+
+    <label for="ciclo">Ciclo:</label>
+    <input type="text" id="ciclo" name="ciclo" th:value="${alumnoModel.Ciclo}" readonly>
+</form>
+</body>
+</html>
